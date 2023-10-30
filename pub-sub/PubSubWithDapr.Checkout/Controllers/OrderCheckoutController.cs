@@ -26,7 +26,7 @@ public class OrderCheckoutController : ControllerBase
     [HttpGet(Name = "GetWeatherForecast")]
     public async Task<IEnumerable<WeatherForecast>> Get()
     {
-        for (int i = 1; i <= 2; i++)
+        for (int i = 1; i <= 1; i++)
         {
             var order = new Order(i);
            
@@ -36,13 +36,13 @@ public class OrderCheckoutController : ControllerBase
             Console.WriteLine("Published data: " + order);
             await _daprClient.PublishEventAsync(AppConstants.PubSubEvent, "orders-2", order);
 
-            await Task.Delay(TimeSpan.FromSeconds(10));
+            await Task.Delay(TimeSpan.FromSeconds(1));
         }
 
-        var forecast = Enumerable.Range(1, 5).Select(index =>
+        var forecast = Enumerable.Range(1, 50).Select(index =>
                 new WeatherForecast
                 (
-                    DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
+                   DateTime.Now.AddDays(index),
                     Random.Shared.Next(-20, 55),
                     Summaries[Random.Shared.Next(Summaries.Length)]
                 ))

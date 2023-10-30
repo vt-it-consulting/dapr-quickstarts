@@ -1,8 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PubSubWithDapr.Checkout", "PubSubWithDapr.Checkout\PubSubWithDapr.Checkout.csproj", "{5162778E-6C9A-46CF-A45F-301DB29D53A0}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PubSubWithDapr.Checkout", "PubSubWithDapr.Checkout\PubSubWithDapr.Checkout.csproj", "{5162778E-6C9A-46CF-A45F-301DB29D53A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PubSubWithDapr.Processing", "PubSubWithDapr.Processing\PubSubWithDapr.Processing.csproj", "{6AAB81A2-3477-42DC-8A01-0FC0E6DADB12}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PubSubWithDapr.Processing", "PubSubWithDapr.Processing\PubSubWithDapr.Processing.csproj", "{6AAB81A2-3477-42DC-8A01-0FC0E6DADB12}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pubsub", "pubsub", "{5C27B9B9-465F-4E99-8CE1-D4C38E4658D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +23,15 @@ Global
 		{6AAB81A2-3477-42DC-8A01-0FC0E6DADB12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6AAB81A2-3477-42DC-8A01-0FC0E6DADB12}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6AAB81A2-3477-42DC-8A01-0FC0E6DADB12}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5162778E-6C9A-46CF-A45F-301DB29D53A0} = {5C27B9B9-465F-4E99-8CE1-D4C38E4658D7}
+		{6AAB81A2-3477-42DC-8A01-0FC0E6DADB12} = {5C27B9B9-465F-4E99-8CE1-D4C38E4658D7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A9F7B013-DF4B-42D4-BE8D-F23C215D6DE3}
 	EndGlobalSection
 EndGlobal

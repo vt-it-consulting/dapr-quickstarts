@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DaprDemo.ServiceInvocation.APIs.Controllers;
 [ApiController]
-[Route("[controller]")]
+[Route("weather-forecast")]
 public class WeatherForecastController : ControllerBase
 {
     private static readonly string[] Summaries = new[]
@@ -17,7 +17,7 @@ public class WeatherForecastController : ControllerBase
         _logger = logger;
     }
 
-    [HttpGet(Name = "GetWeatherForecast")]
+    [HttpGet("all")]
     public IEnumerable<WeatherForecast> Get()
     {
         return Enumerable.Range(1, 50).Select(index => new WeatherForecast

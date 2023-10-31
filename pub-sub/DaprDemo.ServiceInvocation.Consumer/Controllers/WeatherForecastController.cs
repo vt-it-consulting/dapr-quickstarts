@@ -28,8 +28,8 @@ public class WeatherForecastController : ControllerBase
 
         var res = await _daprClient.InvokeMethodAsync<IEnumerable<WeatherForecast>>(
             HttpMethod.Get,
-            "service-weahter-api",
-            "GetWeatherForecast"
+            "service-weather-api",
+            "weather-forecast/all"
           );
 
         return Ok(res);

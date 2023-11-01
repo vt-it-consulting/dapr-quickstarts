@@ -1,0 +1,18 @@
+﻿apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: aws-order-processing-received-binding
+spec:
+  type: bindings.aws.sqs
+  version: v1
+  metadata:
+  - name: queueName
+    value: "aws-order-processing-received"
+  - name: region
+    value: "eu-central-1"
+  - name: accessKey
+    value: "AKIA5QVX5EW3QER6TCD5"
+  - name: secretKey
+    value: "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"
+  - name: direction 
+    value: "input, output"

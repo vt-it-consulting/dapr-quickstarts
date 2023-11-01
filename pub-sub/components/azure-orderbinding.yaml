@@ -1,0 +1,12 @@
+﻿apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: azure-order-processing-received-binding
+spec:
+  type: bindings.azure.servicebusqueues
+  version: v1
+  metadata:
+  - name: connectionString # Required when not using Azure Authentication.
+    value: "Endpoint=sb://vt-it-consulting-s.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=0NbGiRMrS5AiuQMBzT+LfSUqZeXspiedn+ASbM0exKQ="
+  - name: queueName
+    value: "omr-order-processing-received"

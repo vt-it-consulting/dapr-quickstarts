@@ -7,6 +7,6 @@ spec:
   version: v1
   metadata:
   - name: connectionString # Required when not using Azure Authentication.
-    value: "Endpoint=sb://vt-it-consulting-s.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=0NbGiRMrS5AiuQMBzT+LfSUqZeXspiedn+ASbM0exKQ="
+    value: ""
   - name: queueName
     value: "omr-order-processing-received"

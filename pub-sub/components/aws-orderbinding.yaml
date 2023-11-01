@@ -11,8 +11,8 @@ spec:
   - name: region
     value: "eu-central-1"
   - name: accessKey
-    value: "AKIA5QVX5EW3QER6TCD5"
+    value: ""
   - name: secretKey
-    value: "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"
+    value: ""
   - name: direction 
     value: "input, output"
